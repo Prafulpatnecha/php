@@ -11,10 +11,10 @@
         private $datatype = "demo";
         private $connection;
 
-        public function connect()
+        private function connect()
         {
             $this->connection=mysqli_connect($this->host,$this->username,$this->password,$this->datatype);
-            // if($res)
+            // if($this->connection)
             // {
             //     echo "DataBase connected successfully";
             // }
@@ -23,9 +23,11 @@
             // }
         }
         
+        public function __construct()
+        {
+            $this->connect();
+        }
 
         
     }
-
-
 ?>
