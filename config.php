@@ -1,4 +1,3 @@
-
 <?php 
     class Config{
         //hostname
@@ -11,16 +10,9 @@
         private $datatype = "demo";
         private $connection;
 
-        private function connect()
+        public function connect()
         {
             $this->connection=mysqli_connect($this->host,$this->username,$this->password,$this->datatype);
-            // if($this->connection)
-            // {
-            //     echo "DataBase connected successfully";
-            // }
-            // else{
-            //     echo "DataBase Can Not Connected";
-            // }
         }
         
         public function __construct()
@@ -28,6 +20,19 @@
             $this->connect();
         }
 
-        
+        public function insert($name,$age,$course)
+        {
+            $query = "INSERT INTO student (id,name,age,course) VALUES(5,$name,$age,$course)";
+            
+            $res = mysqli_query($this->connection , $query);
+
+            if($res==true)
+            {
+                echo "DataBase connected successfully!";
+            }
+            else{
+                echo "DataBase Can Not Connected!";
+            } 
+        }
     }
 ?>
