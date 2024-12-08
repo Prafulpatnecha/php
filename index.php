@@ -9,7 +9,6 @@
     // $c1->connect();
     
     $is_btn_set = isset($_POST["submit"]);
-    
     if($is_btn_set)
     {
         $name = $_POST['name'];

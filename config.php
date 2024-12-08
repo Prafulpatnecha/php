@@ -22,7 +22,7 @@
 
         public function insert($name,$age,$course)
         {
-            $query = "INSERT INTO student (id,name,age,course) VALUES(5,$name,$age,$course)";
+            $query = "INSERT INTO student (name,age,course) VALUES('$name','$age','$course')";
             
             $res = mysqli_query($this->connection , $query);
 
