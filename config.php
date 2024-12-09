@@ -26,13 +26,27 @@
             
             $res = mysqli_query($this->connection , $query);
 
-            if($res==true)
-            {
-                echo "DataBase connected successfully!";
-            }
-            else{
-                echo "DataBase Can Not Connected!";
-            } 
+            // if($res==true)
+            // {
+            //     echo "DataBase connected successfully!";
+            // }
+            // else{
+            //     echo "DataBase Can Not Connected!";
+            // } 
+        }
+
+        public function getRecord()
+        {
+            $query = "SELECT * FROM student";
+            $res = mysqli_query($this->connection,$query);
+            // $data = mysqli_fetch_assoc($res);
+            return $res;
+        }
+        public function deleteData($id)
+        {
+            $query = "DELETE FROM student WHERE id = '$id'";
+            $res = mysqli_query($this->connection,$query);
+            return $res;
         }
     }
 ?>
