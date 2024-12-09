@@ -18,7 +18,7 @@
 
 
 
-## Data Insert(HTML And PHP)
+## Data Insert (HTML And PHP)
 https://github.com/user-attachments/assets/dacf82ee-4c5c-4742-8153-270d8c1318d6
 
 <h1></h1>
