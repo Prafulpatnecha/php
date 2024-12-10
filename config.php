@@ -48,5 +48,12 @@
             $res = mysqli_query($this->connection,$query);
             return $res;
         }
+
+        public function updateData($id,$name,$age,$course)
+        {
+            $query = "UPDATE SET name='$name',age='$age',course='$course' WHERE $id";
+            $res = mysqli_query($this->connection,$query);
+            return $res;
+        }
     }
 ?>
