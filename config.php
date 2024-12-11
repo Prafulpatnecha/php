@@ -51,7 +51,7 @@
 
         public function updateData($id,$name,$age,$course)
         {
-            $query = "UPDATE SET name='$name',age='$age',course='$course' WHERE $id";
+            $query = "UPDATE student SET name='$name', age='$age' , course='$course' WHERE id='$id'";
             $res = mysqli_query($this->connection,$query);
             return $res;
         }
