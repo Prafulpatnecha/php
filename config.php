@@ -26,13 +26,15 @@
             
             $res = mysqli_query($this->connection , $query);
 
+
+            return $res;
             // if($res==true)
             // {
             //     echo "DataBase connected successfully!";
             // }
             // else{
             //     echo "DataBase Can Not Connected!";
-            // } 
+            // }
         }
 
         public function getRecord()

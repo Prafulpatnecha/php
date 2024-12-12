@@ -10,7 +10,7 @@
     $ageCheck = false; 
     $is_btn_set = isset($_POST["submit"]);
     if($is_btn_set)
-    {
+    { 
         $name = $_POST['name'];
         $age = $_POST['age'];
         $course = $_POST['course'];
