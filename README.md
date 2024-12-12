@@ -41,3 +41,4 @@ https://github.com/user-attachments/assets/5e729b5f-821a-4f1d-8dbd-6f8be1588762
 
 https://github.com/user-attachments/assets/239ff296-7d4b-48b6-988a-991ac9be851c
 
+## Full CRUD OPRATION (POSTMAN)
